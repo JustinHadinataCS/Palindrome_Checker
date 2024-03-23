@@ -1,9 +1,9 @@
 import java.util.*;
 public class Palindrome {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a string: ");
-        String str = sc.nextLine();
+        String str = scanner.nextLine();
         str = str.toLowerCase();
         int n = str.length();
         if (isPalindrome(str, 0, n - 1)) {
@@ -11,6 +11,7 @@ public class Palindrome {
         } else {
             System.out.println("No, " + str + " is not a palindrome");
         }
+        scanner.close();
     }
     
     public static boolean isPalindrome(String str, int start, int end) {
